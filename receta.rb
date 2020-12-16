@@ -1,5 +1,5 @@
 class Recipe
-  attr_accessor :name, :ingredients, :instructions
+  #attr_accessor :name, :ingredients, :instructions
 
   def initialize(name)
     @name = name
