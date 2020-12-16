@@ -1,12 +1,12 @@
 class Recipe
-  attr_accessor :name, :ingredients, :instructions
+  # attr_accessor :name, :ingredients, :instructions
 
   def initialize(name, &block)
     @name = name
     @ingredients = []
     @instructions = []
 
-    instance_eval &block
+    instance_eval &block #eval, class_eval (métodos de instancia)
   end
 
   def to_s
